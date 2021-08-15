@@ -228,4 +228,83 @@ section {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
+
+.team-mate {
+  border-radius: 50%;
+  border: 3px solid var(--color-primary);
+  width: 24rem;
+  height: 24rem;
+  background-image: url(../img/team-mate-1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.team-mate__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23.4rem;
+  height: 23.4rem;
+  border-radius: 50%;
+  background-color: rgba(206, 54, 124, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity .25s ease-out;
+  transition: opacity .25s ease-out;
+}
+
+.team-mate:hover .team-mate__overlay {
+  opacity: 1;
+}
+
+.team-mate__content {
+  color: var(--color-white);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+
+.team-mate:hover .team-mate__content {
+  top: 50%;
+  opacity: 1;
+}
+
+.team-mate__name {
+  font-size: 2.7rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-mate__designation {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .6rem;
+  margin-top: 2rem;
+}
+
+.facebook__icon, .twitter__icon, .linkedin__icon {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--color-white);
+}
+
+.facebook__icon:hover, .twitter__icon:hover, .linkedin__icon:hover {
+  fill: var(--color-primary-light);
+}
 /*# sourceMappingURL=main.css.map */
