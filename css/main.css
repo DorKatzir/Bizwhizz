@@ -115,6 +115,14 @@ html {
   margin-bottom: 3rem;
 }
 
+section {
+  padding-bottom: 8rem;
+}
+
+.section-header {
+  text-align: center;
+}
+
 .section-header h2 {
   color: var(--color-primary);
   font-size: 2.4rem;
@@ -132,8 +140,6 @@ html {
 
 .section-services {
   background-color: var(--color-white);
-  text-align: center;
-  padding-bottom: 8rem;
 }
 
 .services {
