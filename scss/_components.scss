@@ -68,16 +68,32 @@
 
 //////////////////////////////////////////////////////////////////
 
+.team-mates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+}
+
+
 .team-mate{
     border-radius: 50%;
     border: 3px solid var(--color-primary);
     width: 24rem;
     height: 24rem;
-    background-image: url(../img/team-mate-1.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-
+     
+    &--1{
+        background-image: url(../img/team-mate-1.jpg);
+    }
+    &--2{
+        background-image: url(../img/team-mate-2.jpg);
+    }
+    &--3{
+        background-image: url(../img/team-mate-3.jpg);
+    }
     
     &__overlay{
         position: absolute;

@@ -229,15 +229,38 @@ section {
           transform: scale(1.4);
 }
 
+.team-mates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6rem;
+}
+
 .team-mate {
   border-radius: 50%;
   border: 3px solid var(--color-primary);
   width: 24rem;
   height: 24rem;
-  background-image: url(../img/team-mate-1.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+.team-mate--1 {
+  background-image: url(../img/team-mate-1.jpg);
+}
+
+.team-mate--2 {
+  background-image: url(../img/team-mate-2.jpg);
+}
+
+.team-mate--3 {
+  background-image: url(../img/team-mate-3.jpg);
 }
 
 .team-mate__overlay {
