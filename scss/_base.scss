@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing:border-box;
+}
+
+:root{
+  --color-primary:#ce367c;
+  --color-primary-light:#f0c2d8;
+  --color-black:#000;
+  --color-white:#fff;
+  --color-lightgrey:#DCDCDC;
+  --color-lightgrey-2:#f2f2f2;
+  --color-darkgrey:#808080;
+  --color-darkgrey-2:#191919;
+  --color-yellow:#f2cf0d;
+}
+body{
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #777;
+  background-color: var(--color-black);
+
+}
+
+html {
+  font-size:62.5%;
+}
+
+/*COLORS
+ color-primary:#ce367c;
+ color-primary-light:#f0c2d8;
+ color-black:#000;
+ color-white:#fff;
+ color-lightgrey:#DCDCDC;
+ color-lightgrey-2:#f2f2f2;
+ color-darkgrey:#808080;
+ color-darkgrey-2:#191919;
+ color-yellow:#f2cf0d;
+*/
+
+
+
+
