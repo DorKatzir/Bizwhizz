@@ -53,6 +53,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: -13rem;
 }
 
 .header__logo {
