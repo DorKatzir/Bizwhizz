@@ -53,7 +53,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -13rem;
+  margin-top: -14rem;
 }
 
 .header__logo {
@@ -115,6 +115,37 @@ html {
   margin-bottom: 3rem;
 }
 
+.section-header h2 {
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+  color: var(--color-darkgrey);
+  font-size: 4.8rem;
+  text-transform: capitalize;
+  margin-bottom: 2.4rem;
+}
+
+.section-services {
+  background-color: var(--color-white);
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .btn:link, .btn:visited {
   display: block;
   width: 20rem;
@@ -135,5 +166,26 @@ html {
   color: var(--color-white);
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
+}
+
+.service__box {
+  background-color: var(--color-lightgrey);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
+.service__box-title {
+  color: var(--color-black);
+  font-size: 2.3rem;
+  padding: 3rem  6rem 3rem 0;
+}
+
+.service__box:hover {
+  background-color: var(--color-primary);
+}
+
+.service__box:hover .service__box-title {
+  color: var(--color-white);
 }
 /*# sourceMappingURL=main.css.map */
