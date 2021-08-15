@@ -173,12 +173,38 @@ html {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .service__box-title {
   color: var(--color-black);
   font-size: 2.3rem;
   padding: 3rem  6rem 3rem 0;
+  font-weight: 500;
+  -webkit-transform: translateX(-1.6rem);
+          transform: translateX(-1.6rem);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.service__box-icon {
+  height: 11rem;
+  width: 4.8rem;
+  fill: var(--color-primary-light);
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .service__box:hover {
@@ -187,5 +213,13 @@ html {
 
 .service__box:hover .service__box-title {
   color: var(--color-white);
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.service__box:hover .service__box-icon {
+  opacity: 0.6;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 /*# sourceMappingURL=main.css.map */
