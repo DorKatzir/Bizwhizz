@@ -197,7 +197,7 @@
 .container{
     width: 40%;
     margin: 0 auto;
-    outline: 1px solid yellow;
+    //outline: 1px solid yellow;
 }
 
 .testimonial-card{
@@ -265,13 +265,15 @@
 }
 
 .carusel{
-    //overflow: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 
     &__slider{
         display: flex;
         width: 300%;
+        transition: transform .5s ease;
+        
     }
 
     &__radio-btn{
@@ -283,14 +285,14 @@
         align-self: center;
 
         display: flex;
-        gap: 1.6rem;
-        margin: 1.6rem 0;
+        gap: 4rem;
+        margin: 3rem 0;
     }
 
     &__radio-label{
         display: block;
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         border-radius: 50%;
         border: 2px solid var(--color-primary);
         background-color: var(--color-white);
@@ -308,6 +310,12 @@
     &__radio-btn:checked:nth-of-type(3) ~ &__nav &__radio-label:nth-of-type(3){
         background-color: var(--color-primary);
     }
-
+    
+    &__radio-btn:checked:nth-of-type(2) ~ &__slider{
+        transform: translateX(-33.33%);   
+    }
+    &__radio-btn:checked:nth-of-type(3) ~ &__slider{
+        transform: translateX(-66.66%);   
+    }
 }
 

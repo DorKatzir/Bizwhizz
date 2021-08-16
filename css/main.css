@@ -373,7 +373,6 @@ section {
 .container {
   width: 40%;
   margin: 0 auto;
-  outline: 1px solid yellow;
 }
 
 .testimonial-card {
@@ -455,6 +454,7 @@ section {
 }
 
 .carusel {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,6 +469,10 @@ section {
   display: -ms-flexbox;
   display: flex;
   width: 300%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .carusel__radio-btn {
@@ -484,14 +488,14 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.6rem;
-  margin: 1.6rem 0;
+  gap: 4rem;
+  margin: 3rem 0;
 }
 
 .carusel__radio-label {
   display: block;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   border: 2px solid var(--color-primary);
   background-color: var(--color-white);
@@ -508,5 +512,15 @@ section {
 
 .carusel__radio-btn:checked:nth-of-type(3) ~ .carusel__nav .carusel__radio-label:nth-of-type(3) {
   background-color: var(--color-primary);
+}
+
+.carusel__radio-btn:checked:nth-of-type(2) ~ .carusel__slider {
+  -webkit-transform: translateX(-33.33%);
+          transform: translateX(-33.33%);
+}
+
+.carusel__radio-btn:checked:nth-of-type(3) ~ .carusel__slider {
+  -webkit-transform: translateX(-66.66%);
+          transform: translateX(-66.66%);
 }
 /*# sourceMappingURL=main.css.map */
