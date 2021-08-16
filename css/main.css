@@ -373,6 +373,7 @@ section {
 .container {
   width: 40%;
   margin: 0 auto;
+  position: relative;
 }
 
 .testimonial-card {
@@ -522,5 +523,22 @@ section {
 .carusel__radio-btn:checked:nth-of-type(3) ~ .carusel__slider {
   -webkit-transform: translateX(-66.66%);
           transform: translateX(-66.66%);
+}
+
+.left-arrow, .right-arrow {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--color-primary);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.left-arrow {
+  left: -25%;
+}
+
+.right-arrow {
+  right: -25%;
 }
 /*# sourceMappingURL=main.css.map */

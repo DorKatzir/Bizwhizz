@@ -197,6 +197,7 @@
 .container{
     width: 40%;
     margin: 0 auto;
+    position: relative;
     //outline: 1px solid yellow;
 }
 
@@ -317,5 +318,21 @@
     &__radio-btn:checked:nth-of-type(3) ~ &__slider{
         transform: translateX(-66.66%);   
     }
+}
+
+.left-arrow, .right-arrow{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-primary);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.left-arrow{
+    left: -25%;
+}
+.right-arrow{
+    right: -25%;
 }
 
