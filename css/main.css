@@ -138,7 +138,7 @@ section {
   margin-bottom: 2.4rem;
 }
 
-.section-services {
+.section-services, .section-portfolio {
   background-color: var(--color-white);
 }
 
@@ -235,10 +235,9 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 6rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .team-mate {

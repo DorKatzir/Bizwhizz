@@ -71,8 +71,8 @@
 .team-mates{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 6rem;
+    justify-content: space-evenly
+    // gap: 6rem;
 }
 
 
