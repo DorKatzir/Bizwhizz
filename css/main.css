@@ -329,4 +329,44 @@ section {
 .facebook__icon:hover, .twitter__icon:hover, .linkedin__icon:hover {
   fill: var(--color-primary-light);
 }
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+
+.portfolio__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.portfolio__img {
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.portfolio__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+.portfolio__img img:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
 /*# sourceMappingURL=main.css.map */
