@@ -20,5 +20,8 @@
        "> 1%",
        "last 2 versions"
 ],
-"liveServer.settings.port": 8081
+"liveServer.settings.port": 8081,
+"jshint.options": {
+    "esversion": 6
+}
 }
