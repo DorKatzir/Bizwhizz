@@ -275,7 +275,7 @@
     }
 
     &__radio-btn{
-        // display: none;
+        display: none;
     }
 
     &__nav{
@@ -295,6 +295,18 @@
         border: 2px solid var(--color-primary);
         background-color: var(--color-white);
         cursor: pointer;
+    }
+
+    &__radio-btn:checked:nth-of-type(1) ~ &__nav &__radio-label:nth-of-type(1){
+        background-color: var(--color-primary);
+    }
+
+    &__radio-btn:checked:nth-of-type(2) ~ &__nav &__radio-label:nth-of-type(2){
+        background-color: var(--color-primary);
+    }
+
+    &__radio-btn:checked:nth-of-type(3) ~ &__nav &__radio-label:nth-of-type(3){
+        background-color: var(--color-primary);
     }
 
 }

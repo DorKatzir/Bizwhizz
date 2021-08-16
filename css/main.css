@@ -471,6 +471,10 @@ section {
   width: 300%;
 }
 
+.carusel__radio-btn {
+  display: none;
+}
+
 .carusel__nav {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -492,5 +496,17 @@ section {
   border: 2px solid var(--color-primary);
   background-color: var(--color-white);
   cursor: pointer;
+}
+
+.carusel__radio-btn:checked:nth-of-type(1) ~ .carusel__nav .carusel__radio-label:nth-of-type(1) {
+  background-color: var(--color-primary);
+}
+
+.carusel__radio-btn:checked:nth-of-type(2) ~ .carusel__nav .carusel__radio-label:nth-of-type(2) {
+  background-color: var(--color-primary);
+}
+
+.carusel__radio-btn:checked:nth-of-type(3) ~ .carusel__nav .carusel__radio-label:nth-of-type(3) {
+  background-color: var(--color-primary);
 }
 /*# sourceMappingURL=main.css.map */
