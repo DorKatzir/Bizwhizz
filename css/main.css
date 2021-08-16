@@ -369,4 +369,8 @@ section {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
+
+.testimonial-card__icon {
+  fill: white;
+}
 /*# sourceMappingURL=main.css.map */
