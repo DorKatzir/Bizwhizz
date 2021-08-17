@@ -138,7 +138,7 @@ section {
   margin-bottom: 2.4rem;
 }
 
-.section-services, .section-portfolio {
+.section-services, .section-portfolio, .section-contact {
   background-color: var(--color-white);
 }
 
@@ -540,5 +540,64 @@ section {
 
 .right-arrow {
   right: -25%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.contact__column {
+  background-color: var(--color-lightgrey-2);
+  border-radius: 5px;
+  margin: 0.8rem 0;
+  padding: 1.6rem 3rem;
+  font-size: 1.6rem;
+  color: var(--color-black);
+}
+
+.contact__column h2 {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.contact__column--left {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+.contact__column--right {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+}
+
+.contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.contact__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--color-primary);
+  display: block;
+}
+
+.contact__para {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.contact__para--1 {
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

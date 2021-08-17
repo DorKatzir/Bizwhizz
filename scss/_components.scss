@@ -336,3 +336,70 @@
     right: -25%;
 }
 
+
+/////////// Contact //////////////////////////////////////////////// 
+.contact{
+    display:flex;
+    gap:1rem;
+
+    &__column{
+        background-color: var(--color-lightgrey-2);
+        border-radius: 5px;
+        margin: 0.8rem 0;
+        padding: 1.6rem 3rem;
+        font-size: 1.6rem;
+        color: var(--color-black);
+        h2{
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        &--left{
+            flex: 40%;
+        }
+        
+        &--right{
+            flex: 60%;
+        }
+
+        
+    }
+    
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    
+
+        // &__icon-div{
+
+        // }
+
+        // &__detail-div{
+
+        // }
+      
+    }
+    
+    
+    &__icon{
+        width: 3rem;
+        height: 3rem;
+        fill: var(--color-primary);
+        display: block;
+    }
+
+    &__para{
+        font-size: 1.6rem;
+        line-height: 1;
+        
+        &--1{
+            font-weight: 600;
+        } 
+    }
+   
+    
+
+
+
+}
