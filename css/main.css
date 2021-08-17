@@ -553,7 +553,7 @@ section {
   background-color: var(--color-lightgrey-2);
   border-radius: 5px;
   margin: 0.8rem 0;
-  padding: 1.6rem 3rem;
+  padding: 3.5rem 3rem;
   font-size: 1.6rem;
   color: var(--color-black);
 }
@@ -569,6 +569,10 @@ section {
           flex: 40%;
 }
 
+.contact__column--left > p {
+  margin-top: 2rem;
+}
+
 .contact__column--right {
   -webkit-box-flex: 60%;
       -ms-flex: 60%;
@@ -579,6 +583,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1.2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

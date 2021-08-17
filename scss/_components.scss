@@ -346,7 +346,7 @@
         background-color: var(--color-lightgrey-2);
         border-radius: 5px;
         margin: 0.8rem 0;
-        padding: 1.6rem 3rem;
+        padding: 3.5rem 3rem;
         font-size: 1.6rem;
         color: var(--color-black);
         h2{
@@ -356,6 +356,9 @@
 
         &--left{
             flex: 40%;
+            & > p{
+                margin-top: 2rem;
+            }
         }
         
         &--right{
@@ -367,18 +370,9 @@
     
     &__info{
         display: flex;
+        gap: 1.2rem;
         align-items: center;
         margin-top: 2rem;
-    
-
-        // &__icon-div{
-
-        // }
-
-        // &__detail-div{
-
-        // }
-      
     }
     
     
