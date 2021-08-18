@@ -109,3 +109,46 @@ section{
     background-color: var(--color-darkgrey-2);
 
 }
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    
+    &__copyright{
+
+    }
+
+    &__nav{
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1.6rem;
+        }
+    }
+
+    &__author{
+        text-decoration: none;
+        color: var(--color-white);
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: var(--color-white);
+        padding-bottom: .5rem;
+        &:link,
+        &:visited{
+            border-bottom: 2px solid transparent;
+            transition: border-bottom .25s ease-out;
+        }
+        &:hover,
+        &:active{
+            border-bottom: 2px solid var(--color-primary);
+        }
+    }
+
+
+}
