@@ -21,7 +21,18 @@
   --color-yellow:#f2cf0d;
 }
 
+//SASS VARS
 $color-primary:#ce367c;
+
+//SASS RESPONSIVE VARS
+$breakpoint-500: 31.25em;  //1em=16px 500/16 = 31.25em
+$breakpoint-600: 39.375em;  //630px
+$breakpoint-800: 53.875em;  // 860px
+$breakpoint-1000: 62.5em;  // 1000px
+
+
+
+
 
 body{
   font-family: "Work Sans", sans-serif;
